@@ -1,24 +1,23 @@
 body {
   background-color: beige;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
   color: #212121;
+}
+a {
+  color: #212121;
+  text-decoration: none;
 }
 .blue {
   color: #2196f3;
 }
-p,
-ul {
-  font-family: Helvetica;
-  font-size: 14px;
-}
-a {
-  color: blue;
-  text-decoration: none;
-}
-h1,
-h2,
-h3 {
-  font-family: Helvetica;
-  font-size: 20px;
+.hover:hover,
+.hover:focus {
+  color: #2196f3;
 }
 .logo a {
   position: absolute;
