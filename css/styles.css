@@ -37,7 +37,7 @@ a {
 
   color: #2196f3;
 }
-#title {
+.title {
   position: absolute;
   width: 696px;
   height: 120px;
