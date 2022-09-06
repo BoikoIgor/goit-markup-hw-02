@@ -1,57 +1,52 @@
+/* second text color, headings #212121 */
+/* accents #2196F3, #FFFFFF */
+/* backgrounds #FFFFFF, #F5F4FA */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --second-accent-color: #ffffff;
+  --background-color: #ffffff;
+  --second-background-color: #f5f4fa;
+}
 body {
-  background-color: beige;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #212121;
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
 }
-a {
-  color: #212121;
-  text-decoration: none;
+/* Logo */
+.logo {
+  color: #000000;
 }
-.blue {
-  color: #2196f3;
+.logo span {
+  color: var(--accent-color);
 }
-.hover:hover,
-.hover:focus {
-  color: #2196f3;
+.list {
+  list-style-type: none;
 }
-.logo a {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  /* identical to box height */
-
-  letter-spacing: 0.03em;
-
-  color: #2196f3;
+/* Site navigation */
+.site-nav .link {
+  color: var(--title-text-color);
 }
-.title {
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  /* or 136% */
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: #ffffff;
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+.contacts .link {
+  color: var(--primary-text-color);
+}
+/* hero */
+.hero-title {
+  color: var(--second-accent-color);
+}
+/* main */
+.section-title {
+  color: var(--title-text-color);
+}
+.benefits .title {
+  color: var(--title-text-color);
+}
+.team .title {
+  color: var(--title-text-color);
 }
