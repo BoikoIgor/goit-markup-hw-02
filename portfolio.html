@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -30,8 +34,8 @@
     </header>
     <main>
       <section class="section">
-        <h2>Галерея</h2>
-        <ul>
+        <h1 class="section-title">Портфоліо</h1>
+        <ul class="list filter">
           <li>
             <button type="button">Усі</button>
           </li>
@@ -48,7 +52,44 @@
             <button type="button">Маркетинг</button>
           </li>
         </ul>
+        <ul class="portfolio list">
+          <li>
+            <!-- <a href="" -->
+            <img
+              src="./images/portfolio/portfolio-1.jpg"
+              alt="Вебсайт клієнта на екрані ноутбука"
+              width="370"
+              hight="294"
+            />
+            <h2 class="portfolio-title">Технокряк</h2>
+            <p>Веб-сайт</p>
+            <!-- </a
+            > -->
+          </li>
+        </ul>
       </section>
     </main>
+    <footer>
+      <section>
+        <h2>
+          <a class="logo white" href="/"
+            ><b><span>Web</span>Studio</b></a
+          >
+        </h2>
+        <address>
+          м. Київ, пр-т Лесі Українки, 26<br />
+          <ul class="list">
+            <li>
+              <a class="link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              ><br />
+            </li>
+            <li>
+              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+      </section>
+    </footer>
   </body>
 </html>
