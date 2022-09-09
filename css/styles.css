@@ -19,6 +19,7 @@ body {
   color: var(--primary-text-color);
 }
 /* Main page CSS styles */
+
 /* Logo */
 .logo {
   font-family: "Raleway", sans-serif;
@@ -123,8 +124,32 @@ address .link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
+/* Portfolio page */
 /* Filter buttons */
 .filter button {
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   background-color: var(--second-background-color);
   color: var(--title-text-color);
+}
+.filter button:hover,
+.filter button:focus {
+  background-color: var(--accent-color);
+  color: var(--second-accent-color);
+}
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio .text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
+.portfolio .link {
+  text-decoration: none;
 }
