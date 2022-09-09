@@ -11,7 +11,6 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -71,13 +70,14 @@ body {
   text-transform: uppercase;
   color: var(--second-accent-color);
 }
-button {
+.hero-button {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   border: none;
+  cursor: pointer;
   background-color: var(--accent-color);
   color: var(--second-accent-color);
 }
@@ -114,23 +114,31 @@ button {
   background-color: var(--second-background-color);
 }
 /* Footer */
-address {
+.address {
   font-style: normal;
   /* временно для фона */
   /* background-color: #2f303a; */
   color: var(--second-accent-color);
 }
-address .link {
+.address .link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+.address .link:hover,
+.address .link:focus {
+  color: var(--accent-color);
 }
 /* Portfolio page */
 /* Filter buttons */
 .filter button {
+  font-family: inherit;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  border: none;
+  cursor: pointer;
   background-color: var(--second-background-color);
   color: var(--title-text-color);
 }
