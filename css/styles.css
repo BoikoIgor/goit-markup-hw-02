@@ -10,18 +10,21 @@
   --second-background-color: #f5f4fa;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   background-color: var(--background-color);
   color: var(--primary-text-color);
 }
-/* Main page CSS styles */
 
+/* Main page CSS styles */
+.list {
+  list-style-type: none;
+}
 /* Logo */
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -32,9 +35,6 @@ body {
 }
 .logo.white {
   color: var(--second-accent-color);
-}
-.list {
-  list-style-type: none;
 }
 /* Site navigation */
 .site-nav .link {
@@ -94,7 +94,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: var(--title-text-color);
 }
 /* Our team */
@@ -102,30 +102,34 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   color: var(--title-text-color);
 }
 .team .text {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 .team {
   background-color: var(--second-background-color);
 }
 /* Footer */
+/* временно для фона footer */
+footer {
+  background-color: #2f303a;
+}
 .address {
+  text-decoration: none;
   font-style: normal;
-  /* временно для фона */
-  /* background-color: #2f303a; */
   color: var(--second-accent-color);
 }
 .address .link {
   text-decoration: none;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
 .address .link:hover,
-.address .link:focus {
+.address .link:focus,
+.address .address:hover,
+.address .address:focus {
   color: var(--accent-color);
 }
 /* Portfolio page */
