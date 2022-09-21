@@ -1,6 +1,6 @@
 /* second text color, headings #212121 */
 /* accents #2196F3, #FFFFFF */
-/* backgrounds #FFFFFF, #F5F4FA */
+/* backgrounds #FFFFFF, #F5F4FA, #2F303A */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -22,9 +22,17 @@ body {
 .list {
   list-style-type: none;
 }
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--title-text-color);
+}
 /* Logo */
 .logo {
   font-family: 'Raleway', sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
@@ -82,13 +90,7 @@ body {
   color: var(--second-accent-color);
 }
 /* main */
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.7;
-  text-align: center;
-  color: var(--title-text-color);
-}
+
 /* Benefits */
 .benefits .title {
   font-weight: 700;
@@ -112,10 +114,6 @@ body {
   background-color: var(--second-background-color);
 }
 /* Footer */
-/* временно для фона footer */
-footer {
-  background-color: #2f303a;
-}
 .address {
   text-decoration: none;
   font-style: normal;
@@ -123,7 +121,6 @@ footer {
 }
 .address .link {
   text-decoration: none;
-  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
 .address .link:hover,
@@ -147,7 +144,8 @@ footer {
   color: var(--title-text-color);
 }
 .filter button:hover,
-.filter button:focus {
+.filter button:focus,
+.filter button.current {
   background-color: var(--accent-color);
   color: var(--second-accent-color);
 }
